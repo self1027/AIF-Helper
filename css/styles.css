@@ -1,0 +1,42 @@
+body {
+  font-family: monospace;
+  padding: 20px;
+}
+
+.opcao {
+  margin-bottom: 8px;
+}
+
+.grupo {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px dashed #999;
+}
+
+.artigo,
+.inciso {
+  text-decoration: underline;
+  cursor: help;
+  position: relative;
+  margin-right: 6px;
+  font-weight: bold;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background: #222;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  max-width: 360px;
+  top: 18px;
+  left: 0;
+  z-index: 10;
+}
+
+.artigo:hover .tooltip,
+.inciso:hover .tooltip {
+  display: block;
+}

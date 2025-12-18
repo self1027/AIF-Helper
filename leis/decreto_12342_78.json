@@ -1,0 +1,26 @@
+{
+  "id": "decreto_12342_78",
+  "nome": "Decreto nº 12.342, de 27 de setembro de 1978",
+  "artigos": {
+    "art355": {
+      "numero": 355,
+      "caput": "Nas atividades de controle, as autoridades sanitárias indicarão os métodos de combate adequados, cabendo aos executores a obediência às normas de segurança recomendadas, sempre que utilizadas técnicas, equipamentos ou produtos químicos que possam apresentar riscos ao homem, aos animais e às plantas.",
+      "paragrafos": {
+        "par1": {
+          "numero": 1,
+          "texto": "A responsabilidade pelo controle das moscas, baratas e eventuais vetores mecânicos será assim distribuída, cabendo:",
+          "incisos": {
+            "i": "à autoridade sanitária local a orientação técnica e educativa, com ou sem auxílio dos serviços especializados, a vigilância sanitária, o levantamento e a avaliação dos resultados;",
+            "ii": "às Prefeituras Municipais, o saneamento dos criadouros e abrigos associados ao lixo ou entulhos e das canalizações nas vias públicas;",
+            "iii": "às escolas, a ação educativa junto aos escolares;",
+            "iv": "aos particulares, a manutenção das condições higiênicas nos imóveis que ocupem; e aos proprietários dos imóveis não ocupados."
+          }
+        },
+        "par2": {
+          "numero": 2,
+          "texto": "A autoridade sanitária poderá tomar medidas complementares."
+        }
+      }
+    }
+  }
+}
