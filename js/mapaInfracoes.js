@@ -46,6 +46,17 @@ export const MAPA_INFRACOES = {
           incisos: ["iii"]
         }
       ]
+    },
+
+    VAZAMENTO_ESGOTO: {
+      label: "Vazamento de esgoto ou fossa séptica em via pública",
+      bases: [
+        {
+          lei: "decreto_12342_78",
+          artigo: "art12",
+          incisos: ["iv"]
+        }
+      ]
     }
   },
 
@@ -56,6 +67,24 @@ export const MAPA_INFRACOES = {
         {
           lei: "lei_municipal_2584_2010_andradina",
           artigo: "art14"
+        }
+      ]
+    },
+
+    LAVA_JATO: {
+      label: "Lava-jato com despejo de água em via pública",
+      bases: [
+        {
+          lei: "decreto_12342_78",
+          artigo: "art8"
+        },
+        {
+          lei: "decreto_12342_78",
+          artigo: "art214"
+        },
+        {
+          lei: "lei_municipal_889_1980_andradina",
+          artigo: "art188"
         }
       ]
     }
@@ -110,6 +139,7 @@ export const MAPA_INFRACOES = {
           }
         ]
       },
+
       CONSTRUCAO: {
         label: "É terreno em construção ou demolição",
         bases: [
@@ -119,6 +149,7 @@ export const MAPA_INFRACOES = {
           }
         ]
       },
+
       PISCINA: {
         label: "Piscinas não tratadas adequadamente",
         bases: [
@@ -195,6 +226,7 @@ export const MAPA_INFRACOES = {
           }
         ]
       },
+
       CONSTRUCAO: {
         label: "É terreno em construção ou demolição",
         bases: [
@@ -204,6 +236,7 @@ export const MAPA_INFRACOES = {
           }
         ]
       },
+
       PISCINA: {
         label: "Piscinas não tratadas adequadamente",
         bases: [
