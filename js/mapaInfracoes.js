@@ -57,6 +57,17 @@ export const MAPA_INFRACOES = {
           incisos: ["iv"]
         }
       ]
+    },
+
+    LAVRATURA_IMEDIATA:{
+      label: "O auto está sendo Lavrado imediatamente",
+      bases: [
+        {   
+          lei: "lei_10083_98",
+          artigo: "art123",
+          paragrafo: "par1"
+        }
+      ]
     }
   },
 
@@ -87,6 +98,16 @@ export const MAPA_INFRACOES = {
           artigo: "art188"
         }
       ]
+    },
+
+    RECICLAGEM:{
+      label: "Reciclagem sem devida organização",
+      bases: [
+        {
+          lei: "lei_municipal_2584_2010_andradina",
+          artigo: "art10"
+        }
+      ]
     }
   },
 
@@ -97,12 +118,12 @@ export const MAPA_INFRACOES = {
         {
           lei: "lei_10083_98",
           artigo: "art110"
-        },
-        {
+        }
+        /*{   Problemas se não for feito na hora
           lei: "lei_10083_98",
           artigo: "art123",
           paragrafo: "par1"
-        }
+        }*/
       ]
     },
 
@@ -178,12 +199,12 @@ export const MAPA_INFRACOES = {
         {
           lei: "lei_10083_98",
           artigo: "art110"
-        },
-        {
+        }
+        /*{   Problemas se não for feito na hora
           lei: "lei_10083_98",
           artigo: "art123",
           paragrafo: "par1"
-        }
+        }*/
       ]
     },
 
@@ -208,11 +229,7 @@ export const MAPA_INFRACOES = {
           },
           {
             lei: "lei_municipal_889_1980_andradina",
-            artigo: "art66"
-          },
-          {
-            lei: "lei_municipal_2584_2010_andradina",
-            artigo: "art10"
+            artigo: "art69"
           }
         ]
       },
