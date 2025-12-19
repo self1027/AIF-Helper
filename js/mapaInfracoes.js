@@ -109,6 +109,33 @@ export const MAPA_INFRACOES = {
             artigo: "art1"
           }
         ]
+      },
+      CONSTRUCAO: {
+        label: "É terreno em construção ou demolição",
+        bases: [
+          {
+            lei: "lei_municipal_2584_2010_andradina",
+            artigo: "art2"
+          }
+        ]
+      },
+      PISCINA: {
+        label: "Piscinas não tratadas adequadamente",
+        bases: [
+          {
+            lei: "lei_municipal_2584_2010_andradina",
+            artigo: "art3"
+          },
+          {
+            lei: "lei_10083_98",
+            artigo: "art14",
+            incisos: ["i"]
+          },
+          {
+            lei: "lei_municipal_889_1980_andradina",
+            artigo: "art70"
+          }
+        ]
       }
     }
   },
@@ -165,6 +192,33 @@ export const MAPA_INFRACOES = {
             lei: "lei_10083_98",
             artigo: "art122",
             incisos: ["xiii"]
+          }
+        ]
+      },
+      CONSTRUCAO: {
+        label: "É terreno em construção ou demolição",
+        bases: [
+          {
+            lei: "lei_municipal_2584_2010_andradina",
+            artigo: "art2"
+          }
+        ]
+      },
+      PISCINA: {
+        label: "Piscinas não tratadas adequadamente",
+        bases: [
+          {
+            lei: "lei_municipal_2584_2010_andradina",
+            artigo: "art3"
+          },
+          {
+            lei: "lei_10083_98",
+            artigo: "art14",
+            incisos: ["i"]
+          },
+          {
+            lei: "lei_municipal_889_1980_andradina",
+            artigo: "art70"
           }
         ]
       }
