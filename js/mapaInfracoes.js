@@ -35,6 +35,17 @@ export const MAPA_INFRACOES = {
           incisos: ["viii"]
         }
       ]
+    },
+
+    NOTIFICACAO_DESCUMPRIDA: {
+      label: "Deixou de atender notificação formalmente lavrada",
+      bases: [
+        {
+          lei: "lei_10083_98",
+          artigo: "art118",
+          incisos: ["iii"]
+        }
+      ]
     }
   },
 
@@ -42,10 +53,6 @@ export const MAPA_INFRACOES = {
     FERRO_VELHO: {
       label: "Ferro-velho / Sucatas",
       bases: [
-        {
-          lei: "lei_municipal_2584_2010_andradina",
-          artigo: "art2"
-        },
         {
           lei: "lei_municipal_2584_2010_andradina",
           artigo: "art14"
@@ -64,8 +71,8 @@ export const MAPA_INFRACOES = {
         },
         {
           lei: "lei_10083_98",
-          artigo: "art118",
-          incisos: ["iii"]
+          artigo: "art123",
+          paragrafo: "par1"
         }
       ]
     },
@@ -116,8 +123,8 @@ export const MAPA_INFRACOES = {
         },
         {
           lei: "lei_10083_98",
-          artigo: "art118",
-          incisos: ["iii"]
+          artigo: "art123",
+          paragrafo: "par1"
         }
       ]
     },
@@ -148,6 +155,16 @@ export const MAPA_INFRACOES = {
           {
             lei: "lei_municipal_2584_2010_andradina",
             artigo: "art10"
+          }
+        ]
+      },
+      PRODUTO_VENCIDO: {
+        label: "Expor à venda ou entregar ao consumo produtos vencidos",
+        bases: [
+          {
+            lei: "lei_10083_98",
+            artigo: "art122",
+            incisos: ["xiii"]
           }
         ]
       }

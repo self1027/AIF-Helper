@@ -44,7 +44,6 @@ function renderOpcao(opcao, set) {
 
 function renderResultado() {
   const tipo = MAPA_INFRACOES[tipoPessoaSelect.value];
-
   const bases = resolverBases({
     tipoPessoa: tipo,
     tematicos: [...tematicosSelecionados],
@@ -52,40 +51,76 @@ function renderResultado() {
     extras: [...extrasSelecionados]
   });
 
-  resultadoDiv.innerHTML = bases.map(renderBaseLegal).join("");
-}
+  const leisMap = new Map();
+  bases.forEach(b => {
+    if (!leisMap.has(b.lei)) leisMap.set(b.lei, []);
+    leisMap.get(b.lei).push(b);
+  });
 
-function renderBaseLegal(base) {
-  const lei = LEIS[base.lei];
-  const artigo = lei.artigos[base.artigo];
+  let html = "";
+  leisMap.forEach((basesLei, leiId) => {
+    const lei = LEIS[leiId];
+    html += `<div class="lei-container"><strong>${lei.nome}:</strong>`;
 
-  const artigoHtml = `
-    <span class="artigo">
-      Art. ${artigo.numero}
-      <span class="tooltip">${artigo.caput}</span>
-    </span>
-  `;
+    const artigosMap = new Map();
+    basesLei.forEach(b => {
+      const key = `${b.artigo}|${b.paragrafo || ""}`;
 
-  const paragrafoHtml = base.paragrafo
-    ? ` § ${artigo.paragrafos[base.paragrafo].numero}º`
-    : "";
+      const origemSet = new Set();
+      if (b.origem) {
+        if (b.origem instanceof Set) b.origem.forEach(o => origemSet.add(o));
+        else if (Array.isArray(b.origem)) b.origem.forEach(o => origemSet.add(o));
+        else origemSet.add(b.origem);
+      }
 
-  let incisosHtml = "";
+      if (!artigosMap.has(key)) {
+        artigosMap.set(key, {
+          artigo: b.artigo,
+          paragrafo: b.paragrafo,
+          incisos: new Set(b.incisos || []),
+          origem: origemSet
+        });
+      } else {
+        const entry = artigosMap.get(key);
+        (b.incisos || []).forEach(i => entry.incisos.add(i));
+        origemSet.forEach(o => entry.origem.add(o));
+      }
+    });
 
-  if (base.incisos) {
-    const fonte = base.paragrafo
-      ? artigo.paragrafos[base.paragrafo].incisos
-      : artigo.incisos;
+    Array.from(artigosMap.values()).forEach(a => {
+      const artigoData = lei.artigos[a.artigo];
 
-    incisosHtml = base.incisos.map(i => `
-      <span class="inciso">
-        inciso ${i.toUpperCase()}
-        <span class="tooltip">${fonte[i]}</span>
-      </span>
-    `).join(", ");
-  }
+      // Parágrafo com tooltip também
+      let paragrafoHtml = "";
+      if (a.paragrafo) {
+        const parData = artigoData.paragrafos[a.paragrafo];
+        paragrafoHtml = ` <span class="artigo" style="font-weight:normal;">§ ${parData.numero}º<span class="tooltip">${parData.texto}</span></span>`;
+      }
 
-  return `<p>${artigoHtml}${paragrafoHtml}${incisosHtml ? ", " + incisosHtml : ""} (${lei.nome}).</p>`;
+      // Incisos com tooltip restrito à letra
+      let incisosHtml = "";
+      if (a.incisos.size) {
+        const incArray = Array.from(a.incisos).sort();
+        const fonte = a.paragrafo ? artigoData.paragrafos[a.paragrafo].incisos : artigoData.incisos;
+        incisosHtml = ", " + incArray
+          .map(i => `inciso <span class="inciso">${i.toUpperCase()}<span class="tooltip">${fonte[i]}</span></span>`)
+          .join(" e ");
+      }
+
+      const origemHtml = a.origem.size
+        ? `<div class="origem">Origem: ${Array.from(a.origem).join(", ")}</div>`
+        : "";
+
+      html += `<div class="artigo-item">
+                 Art. <span class="artigo">${artigoData.numero}<span class="tooltip">${artigoData.caput}</span></span>${paragrafoHtml}${incisosHtml}
+                 ${origemHtml}
+               </div>`;
+    });
+
+    html += "</div>";
+  });
+
+  resultadoDiv.innerHTML = html;
 }
 
 function montarOpcoes() {
@@ -101,16 +136,14 @@ function montarOpcoes() {
   const tematicoDiv = document.createElement("div");
   tematicoDiv.className = "grupo";
   tematicoDiv.innerHTML = "<strong>Temáticos</strong>";
-
   Object.values(tipo.TEMATICO).forEach(opcao => {
     tematicoDiv.appendChild(renderOpcao(opcao, tematicosSelecionados));
   });
 
-  // ATIVIDADE
+  // ATIVIDADES
   const atividadeDiv = document.createElement("div");
   atividadeDiv.className = "grupo";
-  atividadeDiv.innerHTML = "<strong>Atividade</strong>";
-
+  atividadeDiv.innerHTML = "<strong>Atividades</strong>";
   Object.values(MAPA_INFRACOES.ATIVIDADE).forEach(opcao => {
     atividadeDiv.appendChild(renderOpcao(opcao, atividadesSelecionadas));
   });
@@ -119,7 +152,6 @@ function montarOpcoes() {
   const extrasDiv = document.createElement("div");
   extrasDiv.className = "grupo";
   extrasDiv.innerHTML = "<strong>Extras</strong>";
-
   Object.values(MAPA_INFRACOES.EXTRAS).forEach(opcao => {
     extrasDiv.appendChild(renderOpcao(opcao, extrasSelecionados));
   });

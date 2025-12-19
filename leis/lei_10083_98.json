@@ -37,212 +37,37 @@
       "numero": 122,
       "caput": "São infrações de natureza sanitária, entre outras:",
       "incisos": {
-        "i": {
-          "texto": "Construir ou fazer funcionar estabelecimentos comerciais, de produção, embalagem e manipulação de produtos de interesse à saúde e estabelecimentos de assistência e de interesse à saúde, sem licença dos órgãos sanitários competentes ou contrariando as normas legais vigentes.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "interdição",
-            "apreensão",
-            "inutilização",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "ii": {
-          "texto": "Construir ou fazer funcionar estabelecimentos comerciais, de produção, embalagem e manipulação de produtos de interesse à saúde, sem a presença de responsável técnico legalmente habilitado.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "cancelamento de licença",
-            "interdição",
-            "multa"
-          ]
-        },
-        "iii": {
-          "texto": "Transgredir quaisquer normas legais e regulamentares e/ou adotar procedimentos na área de saneamento ambiental que possam colocar em risco a saúde humana.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "interdição",
-            "intervenção",
-            "multa"
-          ]
-        },
-        "iv": {
-          "texto": "Extrair, produzir, fabricar, transformar, preparar, manipular, purificar, fracionar, embalar ou reembalar, transportar ou utilizar produtos ou resíduos perigosos, tóxicos, explosivos, inflamáveis, corrosivos ou emissores de radiações ionizantes, contrariando a legislação sanitária em vigor.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "apreensão",
-            "inutilização",
-            "suspensão de venda ou fabricação",
-            "cancelamento de registro",
-            "interdição",
-            "cancelamento de licença",
-            "proibição de propaganda",
-            "intervenção"
-          ]
-        },
-        "v": {
-          "texto": "Construir ou fazer funcionar todo e qualquer estabelecimento de criação, manutenção e reprodução de animais, contrariando as normas legais e regulamentos pertinentes.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "apreensão",
-            "interdição",
-            "multa"
-          ]
-        },
-        "vi": {
-          "texto": "Reciclar resíduos sólidos infectantes gerados por estabelecimentos prestadores de serviços de saúde.",
-          "penalidade": [
-            "interdição",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "vii": {
-          "texto": "Manter condição de trabalho que ofereça risco à saúde do trabalhador.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "interdição parcial ou total",
-            "multa"
-          ]
-        },
-        "viii": {
-          "texto": "Obstar, retardar ou dificultar a ação fiscalizadora da autoridade sanitária competente, no exercício de suas funções.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "multa"
-          ]
-        },
-        "ix": {
-          "texto": "Omitir informações referentes a riscos conhecidos à saúde.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "multa"
-          ]
-        },
-        "x": {
-          "texto": "Fabricar, operar ou comercializar máquinas ou equipamentos que ofereçam risco à saúde do trabalhador.",
-          "penalidade": [
-            "prestação de serviços à comunidade",
-            "interdição parcial ou total",
-            "multa"
-          ]
-        },
-        "xi": {
-          "texto": "Extrair, produzir, fabricar, transformar, preparar, manipular, purificar, fracionar, embalar ou reembalar, importar, exportar, armazenar, expedir, transportar, comprar, vender, ceder ou usar produtos de interesse à saúde, sem os padrões de identidade, qualidade e segurança.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "apreensão",
-            "inutilização",
-            "interdição",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "xii": {
-          "texto": "Comercializar produtos institucionais e de distribuição gratuita.",
-          "penalidade": [
-            "interdição",
-            "multa"
-          ]
-        },
-        "xiii": {
-          "texto": "Expor à venda ou entregar ao consumo e uso produtos de interesse à saúde sem prazo de validade, data de fabricação, com prazo expirado ou com datas adulteradas.",
-          "penalidade": [
-            "prestação de serviços à comunidade",
-            "interdição",
-            "apreensão",
-            "inutilização",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "xiv": {
-          "texto": "Rotular produtos de interesse à saúde contrariando as normas legais e regulamentares.",
-          "penalidade": [
-            "prestação de serviços à comunidade",
-            "apreensão",
-            "inutilização",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "xv": {
-          "texto": "Fazer propaganda enganosa de produto ou serviço de saúde contrariando a legislação sanitária em vigor.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "multa"
-          ]
-        },
-        "xvi": {
-          "texto": "Fazer propaganda de produtos farmacêuticos em promoção, ofertas ou doados, concursos ou prêmios a profissionais de saúde.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "multa"
-          ]
-        },
-        "xvii": {
-          "texto": "Instalar ou fazer funcionar equipamentos inadequados, insuficientes ou em desacordo com normas técnicas e legais.",
-          "penalidade": [
-            "advertência",
-            "interdição",
-            "apreensão",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "xviii": {
-          "texto": "Alterar processo de fabricação, componentes, nome ou elementos de produtos sujeitos a controle sanitário sem autorização do órgão competente.",
-          "penalidade": [
-            "prestação de serviços à comunidade",
-            "interdição",
-            "apreensão",
-            "inutilização",
-            "cancelamento de licença",
-            "multa"
-          ]
-        },
-        "xix": {
-          "texto": "Transgredir outras normas legais federais ou estaduais destinadas à promoção, prevenção e proteção à saúde.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "interdição",
-            "apreensão",
-            "inutilização",
-            "suspensão de fabricação ou venda",
-            "cancelamento de licença",
-            "proibição de propaganda",
-            "intervenção",
-            "multa"
-          ]
-        },
-        "xx": {
-          "texto": "Descumprir atos emanados das autoridades sanitárias visando à aplicação da legislação pertinente à promoção, prevenção e proteção à saúde.",
-          "penalidade": [
-            "advertência",
-            "prestação de serviços à comunidade",
-            "interdição",
-            "apreensão",
-            "inutilização",
-            "suspensão de venda ou fabricação",
-            "cancelamento de licença",
-            "proibição de propaganda",
-            "intervenção",
-            "multa"
-          ]
+        "i": "Construir ou fazer funcionar estabelecimentos comerciais, de produção, embalagem e manipulação de produtos de interesse à saúde e estabelecimentos de assistência e de interesse à saúde, sem licença dos órgãos sanitários competentes ou contrariando as normas legais vigentes.",
+        "ii": "Construir ou fazer funcionar estabelecimentos comerciais, de produção, embalagem e manipulação de produtos de interesse à saúde, sem a presença de responsável técnico legalmente habilitado.",
+        "iii": "Transgredir quaisquer normas legais e regulamentares e/ou adotar procedimentos na área de saneamento ambiental que possam colocar em risco a saúde humana.",
+        "iv": "Extrair, produzir, fabricar, transformar, preparar, manipular, purificar, fracionar, embalar ou reembalar, transportar ou utilizar produtos ou resíduos perigosos, tóxicos, explosivos, inflamáveis, corrosivos ou emissores de radiações ionizantes, contrariando a legislação sanitária em vigor.",
+        "v": "Construir ou fazer funcionar todo e qualquer estabelecimento de criação, manutenção e reprodução de animais, contrariando as normas legais e regulamentos pertinentes.",
+        "vi": "Reciclar resíduos sólidos infectantes gerados por estabelecimentos prestadores de serviços de saúde.",
+        "vii": "Manter condição de trabalho que ofereça risco à saúde do trabalhador.",
+        "viii": "Obstar, retardar ou dificultar a ação fiscalizadora da autoridade sanitária competente, no exercício de suas funções.",
+        "ix": "Omitir informações referentes a riscos conhecidos à saúde.",
+        "x": "Fabricar, operar ou comercializar máquinas ou equipamentos que ofereçam risco à saúde do trabalhador.",
+        "xi": "Extrair, produzir, fabricar, transformar, preparar, manipular, purificar, fracionar, embalar ou reembalar, importar, exportar, armazenar, expedir, transportar, comprar, vender, ceder ou usar produtos de interesse à saúde, sem os padrões de identidade, qualidade e segurança.",
+        "xii": "Comercializar produtos institucionais e de distribuição gratuita.",
+        "xiii": "Expor à venda ou entregar ao consumo e uso produtos de interesse à saúde sem prazo de validade, data de fabricação, com prazo expirado ou com datas adulteradas.",
+        "xiv": "Rotular produtos de interesse à saúde contrariando as normas legais e regulamentares.",
+        "xv": "Fazer propaganda enganosa de produto ou serviço de saúde contrariando a legislação sanitária em vigor.",
+        "xvi": "Fazer propaganda de produtos farmacêuticos em promoção, ofertas ou doados, concursos ou prêmios a profissionais de saúde.",
+        "xvii": "Instalar ou fazer funcionar equipamentos inadequados, insuficientes ou em desacordo com normas técnicas e legais.",
+        "xviii": "Alterar processo de fabricação, componentes, nome ou elementos de produtos sujeitos a controle sanitário sem autorização do órgão competente.",
+        "xix": "Transgredir outras normas legais federais ou estaduais destinadas à promoção, prevenção e proteção à saúde.",
+        "xx": "Descumprir atos emanados das autoridades sanitárias visando à aplicação da legislação pertinente à promoção, prevenção e proteção à saúde."
+      }
+    },
+    "art123": {
+      "numero": 123,
+      "caput": "Quando constatadas irregularidades configuradas como infração sanitária neste Código, ou em outros diplomas legais vigentes, a autoridade sanitária competente lavrará de imediato os autos de infração.",
+      "paragrafos": {
+        "par1": {
+          "numero": "único",
+          "texto": "As infrações sanitárias serão apuradas em processo administrativo próprio, iniciado com o auto de infração, observados o rito e os prazos estabelecidos neste Código."
         }
       }
     }
-}
+  }
 }
